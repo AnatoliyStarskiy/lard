@@ -1,0 +1,22 @@
+extends common/_layout
+
+block content
+    header.h
+        .h__container.container
+            a.h__logo-wrp(href="/") 
+                svg.h__logo(alt="logo")
+                    use(xlink:href="/img/logo.svg#logo")
+    main
+        section.mb
+            .mb__container.container
+                .mb__stub 
+                    p.title САйт в разработке
+                    p.descr В настоящее время на сайте LAR DEVELOPMENT ведутся технические работы. Вы всегда можете связаться с нами:
+                    a(href="tel:+88127703737").link
+                        img(src="/img/icons.svg#phone" alt="phone")
+                        |  8 812 770-37-37               
+                .mb__header
+                    h1.mb__title
+                        | Каждый объект – уникальный продукт, рожденный из любви 
+                        br
+                        | к своему делу!

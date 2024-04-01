@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>LarDevelopment</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&amp;family=Mulish:wght@300;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div style="background-color: #16424F;">
+      <header class="h">
+        <div class="h__container container"><a class="h__logo-wrp" href="/"> 
+            <svg class="h__logo" alt="logo">
+              <use xlink:href="/img/logo.svg#logo"></use>
+            </svg></a>
+          <div class="h__content"><a class="btn" href="tel:+7 812 850 50 10"> <span class="btn__label">+7 812 850 50 10</span></a>
+            <button class="h__filters-btn btn" aria-label="Перейти в фильтры">
+              <svg class="btn__icon">
+                <use xlink:href="/img/icons.svg#filters"></use>
+              </svg><span class="btn__label">Выбрать недвижимость</span>
+            </button>
+            <div class="h__burger">
+              <button class="burger" aria-label="Открыть меню"><span class="burger__inner"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main>
+      <style>
+        .ui-block {
+        	display: grid;
+        	gap: 1rem;
+        	margin-bottom: 5rem;
+        }
+        ul {
+        	list-style: none;
+        	margin: 0;
+        	padding: 0;
+        }
+        
+      </style>
+      <div class="container">
+        <div class="ui-block">
+          <h1 class="ht ht--h1">Заголовок 1</h1>
+          <h2 class="ht ht--h2">Заголовок 2</h2>
+          <h3 class="ht ht--h3">Заголовок 3</h3>
+        </div>
+        <ul class="ui-block">
+          <li>
+            <button class="btn" aria-label=""><span class="btn__label">Подробнее</span>
+              <svg class="btn__icon">
+                <use xlink:href="/img/icons.svg#simpleRight"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="btn" aria-label="">
+              <svg class="btn__icon">
+                <use xlink:href="/img/icons.svg#filters"></use>
+              </svg><span class="btn__label">Выбрать недвижимость</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn--blue" aria-label=""><span class="btn__label">Отправить</span>
+              <svg class="btn__icon">
+                <use xlink:href="/img/icons.svg#simpleRight"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="btn" aria-label=""><span class="btn__label">Подробнее</span>
+              <svg class="btn__icon btn__icon--large" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="moving" d="M8 22H18M18 22L15.1429 19M18 22L15.1429 25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9.46564 7.06213C9.28814 6.85059 9.31539 6.53466 9.53129 6.3625C12.378 4.09265 15.7932 2.64084 19.4096 2.16846C23.1915 1.67447 27.0358 2.27216 30.4891 3.89104C33.9425 5.50992 36.861 8.08249 38.9005 11.3054C40.9399 14.5283 42.0153 18.2672 41.9998 22.0812C41.9844 25.8952 40.8786 29.6252 38.8131 32.8314C36.7475 36.0377 33.8082 38.5865 30.3418 40.1773C26.8754 41.7681 23.0264 42.3345 19.2487 41.8099C15.6362 41.3081 12.2329 39.8286 9.40475 37.5358C9.19024 37.3618 9.16557 37.0457 9.34478 36.8356C9.52399 36.6255 9.83921 36.6011 10.0539 36.7747C12.7368 38.944 15.9626 40.3439 19.3862 40.8194C22.9751 41.3178 26.6317 40.7797 29.9247 39.2684C33.2178 37.7572 36.0101 35.3358 37.9724 32.2899C39.9347 29.2439 40.9851 25.7004 40.9998 22.0771C41.0146 18.4539 39.9929 14.9019 38.0554 11.8401C36.118 8.77837 33.3454 6.33442 30.0647 4.79649C26.784 3.25855 23.1319 2.69075 19.5391 3.16004C16.1118 3.60772 12.8747 4.98137 10.1743 7.1288C9.95815 7.30067 9.64314 7.27367 9.46564 7.06213Z" fill="currentColor"></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="btn" aria-label=""><span class="btn__label">Показать все преимущества</span>
+              <svg class="btn__icon">
+                <use xlink:href="/img/icons.svg#simpleDown"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <ul class="ui-block">
+          <li class="input-line">
+            <input class="input-line__input" type="text">
+            <p class="input-line__error-text hidden"></p>
+          </li>
+          <li class="input-line">
+            <input class="input-line__input has-error" type="text">
+            <p class="input-line__error-text">Пожалуйста заполните поле</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="f">
+      <div class="f__container container">
+        <ul class="f__menu">
+          <li class="f__menu-item"><a class="f__link" href="#">Акции</a></li>
+          <li class="f__menu-item"><a class="f__link" href="#">Объекты</a></li>
+          <li class="f__menu-item"><a class="f__link" href="#">Как купить</a></li>
+          <li class="f__menu-item"><a class="f__link" href="#">Новости</a></li>
+          <li class="f__menu-item"><a class="f__link" href="#">Проектные декларации</a></li>
+        </ul>
+        <div class="f__contacts-wrp"><a class="f__logo-wrp" href="/"> 
+            <svg class="f__logo" alt="logo">
+              <use xlink:href="/img/logo.svg#logo"></use>
+            </svg></a>
+          <ul class="f__contacts">
+            <li><a class="f__link" href="tel:+7 812 850 50 10">+7 812 850 50 10</a></li>
+            <li><a class="f__link" href="mailto:office@lardevelopment.ru">office@lardevelopment.ru    </a></li>
+          </ul>
+        </div>
+        <div class="f__form-wrp">
+          <form class="f__form">
+            <label class="f__form-header">Остались вопросы? Напишите нам</label>
+          </form>
+        </div>
+        <div class="f__soc-list soc-list"><a class="soc-list__link" href="#">
+            <svg class="soc-list__icon">
+              <use xlink:href="/img/icons.svg#vk"></use>
+            </svg></a><a class="soc-list__link" href="#">
+            <svg class="soc-list__icon">
+              <use xlink:href="/img/icons.svg#tg"></use>
+            </svg></a></div>
+        <p class="f__copyright">© 2024 LAR DEVELOPMENT  |  Все права защищены</p>
+      </div>
+    </footer>
+    <script src="/js/focus-visible.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

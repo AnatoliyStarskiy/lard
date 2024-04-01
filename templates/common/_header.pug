@@ -1,0 +1,18 @@
+header.h
+	.h__container.container
+		a.h__logo-wrp(href="/") 
+			svg.h__logo(alt="logo")
+				use(xlink:href="/img/logo.svg#logo")
+		.h__content
+			a.btn(href="tel:+7 812 850 50 10") 
+				span.btn__label +7 812 850 50 10
+			button.h__filters-btn.btn(aria-label="Перейти в фильтры")
+				svg.btn__icon
+					use(xlink:href="/img/icons.svg#filters")
+				span.btn__label Выбрать недвижимость
+			.h__burger
+				button.burger(aria-label="Открыть меню")
+					span.burger__inner
+						span.burger__line
+						span.burger__line
+						span.burger__line

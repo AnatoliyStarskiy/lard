@@ -1,0 +1,60 @@
+/*General*/
+html {
+	font-size: 62.5%;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	font-family: @mulish;
+	min-width: 320px;
+	font-size: 1.4rem;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: subpixel-antialiased;
+	
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+input, textarea,
+button, select {
+	font-family: @mulish;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+}
+
+button {
+	margin: 0;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+	}
+}
+
+/*
+	This will hide the focus indicator if the element receives focus via the mouse,
+	but it will still show up on keyboard focus.
+*/
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}

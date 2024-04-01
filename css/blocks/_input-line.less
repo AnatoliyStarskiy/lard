@@ -1,0 +1,48 @@
+.input-line__input {
+	font-size: 1.6rem;
+	color: #000;
+
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	border-radius: 0;
+	padding: 2rem;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+
+	&::placeholder {
+		color: #000000;
+		opacity: 0.5;
+	}
+
+	&:focus {
+		outline: none;
+		border-color: #000;
+	}
+
+	&:disabled {
+		user-select: none;
+		background-color: #D7D7D7;
+		border-color: #D7D7D7;
+	}
+}
+
+textarea.input-line__input {
+	resize: none;
+}
+
+.input-line__input--error,
+.input-line__input.has-error {
+	border-color: @color-red;
+}
+
+.input-line__error-text {
+	font-size: 1.2rem;
+	color: @color-red;
+
+	margin-top: .5rem;
+	margin-bottom: 0;
+
+	&.hidden {
+		display: none;
+	}
+}

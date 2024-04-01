@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Lar Development - список страниц</title>
+	<style>
+		body {
+			font-family: Arial;
+		}
+		ul li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		ol { counter-reset: item }
+		li { display: block }
+		li:before { content: counters(item, ".") " "; counter-increment: item }
+	</style>
+</head>
+<body>
+	<h2>Список страниц:</h2>
+	<ol class="top_menu">
+		<li><a href="ui-kit.html">UI-kit</a></li>
+		<li><a href="main.html">Главная</a></li>
+		<li><a href="stub.html">Заглушка</a></li>
+	</ol>
+</body>
+</html>
