@@ -1,0 +1,43 @@
+.object {
+    padding-bottom: 6rem;
+
+    @media @tabletH {
+        padding-bottom: 12rem;
+    }
+}
+
+.container__container {
+    @media @tabletH {
+        display: grid;
+        grid-template-columns: 0.6fr 1.2fr 1fr;
+        grid-column-gap: 6rem;
+    }
+}
+
+.object__title {
+    margin-bottom: 2rem;
+
+    color: @color-blue;
+    text-transform: uppercase;
+}
+
+.objects__descr {
+    margin: 0;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5em;
+
+    @media @tabletH {
+        font-size: 1.6rem;
+    }
+}
+
+.objects__img {
+    display: block;
+    width: 100%;
+
+    @media @tabletH-max {
+        display: none;
+    }
+}

@@ -59,6 +59,9 @@ button:disabled {
   margin-left: auto;
   margin-right: auto;
 }
+.container--narrow {
+  max-width: 87rem;
+}
 .ht {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -468,18 +471,27 @@ textarea.input-line__input {
   color: #ffffff;
 }
 .mb {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  min-height: 60rem;
+  margin-bottom: 9rem;
   background: url(/img/main_bg.jpg) center center / cover no-repeat;
 }
+.mb__container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media print, (min-width: 1024px) {
+  .mb__container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
 .mb__title {
-  position: absolute;
-  bottom: 3rem;
-  right: 2rem;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -490,18 +502,288 @@ textarea.input-line__input {
   text-align: center;
   text-transform: uppercase;
 }
-@media (max-width: 1023px) {
-  .mb__title {
-    left: 2rem;
-  }
-}
 @media print, (min-width: 1024px) {
   .mb__title {
-    bottom: 6rem;
-    right: 6rem;
     max-width: 95rem;
     font-size: 6rem;
     text-align: right;
+  }
+}
+.mb__video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.object {
+  padding-bottom: 6rem;
+}
+@media print, (min-width: 1024px) {
+  .object {
+    padding-bottom: 12rem;
+  }
+}
+@media print, (min-width: 1024px) {
+  .container__container {
+    display: grid;
+    grid-template-columns: 0.6fr 1.2fr 1fr;
+    grid-column-gap: 6rem;
+  }
+}
+.object__title {
+  margin-bottom: 2rem;
+  color: #16424F;
+  text-transform: uppercase;
+}
+.objects__descr {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+@media print, (min-width: 1024px) {
+  .objects__descr {
+    font-size: 1.6rem;
+  }
+}
+.objects__img {
+  display: block;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .objects__img {
+    display: none;
+  }
+}
+.preview {
+  padding-bottom: 6rem;
+}
+@media (max-width: 1023px) {
+  .preview {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media print, (min-width: 1024px) {
+  .preview {
+    display: grid;
+    grid-template-columns: 67.5rem auto;
+    padding-bottom: 12rem;
+  }
+}
+@media print, (min-width: 1024px) {
+  .preview--kurskaya {
+    grid-template-columns: auto 67.5rem;
+  }
+}
+.preview--kurskaya .preview__descr-wrp {
+  grid-column: 2;
+}
+.preview--kurskaya .preview__img-wrp {
+  grid-row: 1;
+  grid-column: 1;
+}
+.preview--kurskaya .preview__descr-wrp,
+.preview--kurskaya .preview__title {
+  background-color: #37394C;
+}
+@media print, (min-width: 1024px) {
+  .preview--kurskaya .preview__title {
+    left: 3rem;
+    right: auto;
+  }
+}
+@media print, (min-width: 1024px) {
+  .preview--kurskaya .preview__label {
+    left: auto;
+    right: 3rem;
+  }
+}
+.preview__descr-wrp {
+  position: relative;
+  padding: 9rem 2rem 6rem;
+  text-align: center;
+  background-color: #374C42;
+}
+.preview__label {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+@media print, (min-width: 1024px) {
+  .preview__label {
+    top: 4.5rem;
+  }
+}
+.preview__logo {
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.preview__descr {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #fff;
+}
+@media print, (min-width: 1024px) {
+  .preview__descr {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6rem;
+  }
+}
+.preview__address {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.preview__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 3rem;
+  margin: 0 0 3rem;
+  padding: 0;
+  list-style: none;
+}
+.preview__list span {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  color: #E4D7C4;
+  text-transform: uppercase;
+}
+.preview__list-value {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: #8C694B;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.preview__more-btn {
+  color: #fff;
+  text-transform: uppercase;
+}
+.preview__img-wrp {
+  position: relative;
+  display: block;
+}
+.preview__title {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  margin: 0;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background-color: #374C42;
+  border-radius: 0.2rem;
+}
+.preview__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about__container {
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+}
+@media print, (min-width: 1024px) {
+  .about__container {
+    padding-top: 6rem;
+    padding-bottom: 18rem;
+  }
+}
+.about__logo {
+  display: block;
+  width: 15rem;
+  height: 6rem;
+  margin-bottom: 2rem;
+  color: #374C42;
+}
+@media print, (min-width: 1024px) {
+  .about__logo {
+    width: 20rem;
+    height: 8rem;
+  }
+}
+.about__text {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+@media print, (min-width: 1024px) {
+  .about__text {
+    max-width: 64.5rem;
+    font-size: 1.6rem;
+  }
+}
+.mquote {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 9rem;
+  background-color: #EEF2F1;
+}
+@media print, (min-width: 1024px) {
+  .mquote {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+@media print, (min-width: 1024px) {
+  .mquote__container {
+    display: grid;
+    grid-template-columns: 9.5rem auto 20rem;
+    column-gap: 5rem;
+  }
+}
+.mquote__text-wrp {
+  margin-bottom: 3rem;
+}
+.mquote__icon {
+  width: 8.5rem;
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.mquote__text {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.mquote__name {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mquote__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1023px) {
+  .mquote__photo-wrp {
+    display: flex;
+    justify-content: center;
   }
 }
 .mb__stub {

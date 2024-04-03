@@ -1,25 +1,28 @@
 .mb {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    
-    height: 100vh;
-    min-height: 60rem;
+    margin-bottom: 9rem;
 
     background: url(/img/main_bg.jpg) center center / cover no-repeat;
 }
 
+.mb__container {
+    position: relative;
+    z-index: 1;
 
-.mb__header {
+    display: flex;
+    align-items: flex-end;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
+    @media @tabletH {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
 }
 
 .mb__title {
-    position: absolute;
-    bottom: 3rem;    
-    right: 2rem;
-    
     margin: 0;
 
     font-family: @montserrat;
@@ -31,17 +34,20 @@
     text-align: center;
     text-transform: uppercase;
 
-    @media @tabletH-max {
-        left: 2rem;
-    }
-
     @media @tabletH {
-        bottom: 6rem;    
-        right: 6rem;
-
         max-width: 95rem;
 
         font-size: 6rem;
         text-align: right;
     }
 }
+
+
+.mb__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+

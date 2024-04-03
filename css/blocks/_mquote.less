@@ -1,0 +1,65 @@
+.mquote {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 9rem;
+
+    background-color: @color-light-grey;
+
+    @media @tabletH {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+}
+
+.mquote__container {
+    @media @tabletH {
+        display: grid;
+        grid-template-columns: 9.5rem auto 20rem;
+        column-gap: 5rem;
+    }
+}
+
+.mquote__text-wrp {
+    margin-bottom: 3rem;
+}
+
+.mquote__icon {
+    width: 8.5rem;
+    height: 8rem;
+    margin-bottom: 3rem;
+}
+
+.mquote__text {
+    margin-top: 0;
+    margin-bottom: 3rem;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.mquote__name {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+
+    font-family: @montserrat;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mquote__title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.mquote__photo-wrp {
+    @media @tabletH-max {
+        display: flex;
+        justify-content: center;
+    }
+}

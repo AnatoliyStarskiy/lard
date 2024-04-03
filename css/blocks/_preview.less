@@ -1,0 +1,180 @@
+.preview {
+	padding-bottom: 6rem;
+	
+	@media @tabletH-max {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media @tabletH {
+		display: grid;
+		grid-template-columns: 67.5rem auto;
+		padding-bottom: 12rem;
+	}
+
+	&--kurskaya {
+
+		@media @tabletH {
+			grid-template-columns: auto 67.5rem;
+		}
+
+		.preview__descr-wrp {
+			grid-column: 2;
+		}
+
+		.preview__img-wrp {
+			grid-row: 1;
+			grid-column: 1;
+		}
+
+		.preview__descr-wrp,
+		.preview__title {
+			background-color: @color-purple;
+		}
+
+		.preview__title {
+
+			@media @tabletH {
+				left: 3rem;
+				right: auto;
+			}
+		}
+
+		.preview__label {
+
+			@media @tabletH {
+				left: auto;
+				right: 3rem;
+			}
+		}
+	}
+}
+
+.preview__descr-wrp {
+	position: relative;
+
+	padding: 9rem 2rem 6rem;
+
+	text-align: center;
+
+	background-color: @color-green;
+}
+
+.preview__label {
+	position: absolute;
+	top: 3rem;
+	left: 3rem;
+
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	padding: 0.5rem 2rem;
+
+	border-radius: 0.2rem;
+	background-color: #fff;
+
+	@media @tabletH {
+		top: 4.5rem;
+	}
+}
+
+.preview__logo {
+	display: inline-block;
+	margin-bottom: 3rem;
+}
+
+.preview__descr {
+	margin-bottom: 3rem;
+
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 1.5em;
+	color: #fff;
+
+	@media @tabletH {
+		max-width: 42rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		font-size: 1.6rem;
+	}
+}
+
+.preview__address {
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.preview__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	column-gap: 3rem;
+	margin: 0 0 3rem;
+	padding: 0;
+
+	list-style: none;
+
+	span {
+		font-size: 0.9rem;
+		letter-spacing: 0.05em;
+		color: #E4D7C4;
+		text-transform: uppercase;
+	}
+}
+
+.preview__list-value {
+	margin-top: 0;
+	margin-bottom: 0.4rem;
+
+	font-size: 2rem;
+	font-style: italic;
+	color: @color-brown;
+	text-transform: uppercase;
+	line-height: 1em;
+
+	@media @tabletH {
+
+	}
+}
+
+.preview__more-btn {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.preview__img-wrp {
+	position: relative;
+
+	display: block;
+}
+
+.preview__title {
+	position: absolute;
+	top: 3rem;
+	right: 3rem;
+
+	margin: 0;
+	padding: 1.5rem 2rem;
+
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #fff;
+
+	background-color: @color-green;
+	border-radius: 0.2rem;
+
+	@media @tabletH {
+		
+	}
+}
+
+.preview__img {
+	display: block;
+	height: 100%;
+	width: 100%;
+
+	object-fit: cover;
+}
